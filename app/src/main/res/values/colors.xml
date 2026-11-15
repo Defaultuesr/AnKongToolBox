@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cream">#FFFFF8EE</color>
+    <color name="cream_dark">#FF191610</color>
+    <color name="amber">#FFFAE185</color>
+    <color name="olive">#FF6F5C0F</color>
+    <color name="surface">#FFFFF8EE</color>
+    <color name="surface_dark">#FF191610</color>
+</resources>

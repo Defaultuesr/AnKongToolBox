@@ -1,0 +1,38 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    // 注意：手工构建脚本 build-apk.sh 使用 AndroidManifest.xml 里的 package。
+    // 若用 Android Studio / Gradle 构建时出现 package 冲突提示，
+    // 删除 AndroidManifest.xml 的 package="com.ankong.toolbox" 属性即可。
+    namespace 'com.ankong.toolbox'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'com.ankong.toolbox'
+        minSdk 23
+        targetSdk 34
+        versionCode 9
+        versionName '1.4'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    sourceSets {
+        main {
+            assets.srcDirs = ['src/main/assets']
+        }
+    }
+}
