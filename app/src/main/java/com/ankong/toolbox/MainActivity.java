@@ -611,7 +611,7 @@ public class MainActivity extends Activity {
                         o.put("network", "未连接");
                     }
                 }
-                o.put("app", "安空工具箱 v1.4");
+                o.put("app", "安空工具箱 v1.5");
                 return o.toString();
             } catch (Exception e) {
                 return "{}";

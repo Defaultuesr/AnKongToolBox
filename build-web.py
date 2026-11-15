@@ -20,9 +20,12 @@ JS_FILES = [
     'i18n-data.js',
     'i18n-extra.js',
     'i18n-v13.js',
+    'i18n-v15.js',
+    'i18n-v15-options.js',
     'i18n.js',
     'hubs.js',
     'pages.js',
+    'pages-extra.js',
     'tools-query.js',
     'tools-text.js',
     'tools-dev.js',
@@ -33,6 +36,7 @@ JS_FILES = [
     'tools-hub.js',
     'tools-more.js',
     'tools-v13.js',
+    'tools-v15.js',
     'core.js',
 ]
 

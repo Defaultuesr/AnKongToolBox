@@ -262,7 +262,7 @@ T({ id: 'num2cn', name: '数字转中文大写', cat: 'text',
 T({ id: 'slug', name: 'URL 别名与安全文件名', cat: 'text',
   desc: '标题转 URL slug、安全文件名或 HTML id', tags: '文本 slug 文件名 url 别名 安全',
   fields: [
-    { k: 'text', label: '标题 / 文本', type: 'text', value: '安空工具箱 v' + (window.AK_VERSION || '1.4') + '：一个 App 装下所有小工具!' },
+    { k: 'text', label: '标题 / 文本', type: 'text', value: '安空工具箱 v' + (window.AK_VERSION || '1.5') + '：一个 App 装下所有小工具!' },
     { k: 'mode', label: '用途', type: 'select', value: 'slug', options: [
       ['slug', 'URL slug'], ['file', '安全文件名'], ['id', 'HTML id / 锚点'] ] },
     { k: 'sep', label: '分隔符', type: 'text', value: '-' },

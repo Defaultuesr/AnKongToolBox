@@ -8,7 +8,7 @@
 #   ANDROID_TOOLS_DIR=/path/to/sdk ./build-apk.sh
 #      复用已经准备好的 SDK 目录（内含 bt/android-14 与 plat/android-34-ext12）。
 #
-# 产物：dist/安空工具箱-v1.4.apk（debug 签名，可直接安装到手机 / 平板 / ChromeOS）
+# 产物：dist/安空工具箱-v1.5.apk（debug 签名，可直接安装到手机 / 平板 / ChromeOS）
 #
 # 构建链：aapt2 compile/link → javac → d8 → 追加 classes.dex → zipalign → apksigner
 # 只需 JDK 8+、python3、curl、unzip；不依赖 Gradle 与 Android Studio。
@@ -20,7 +20,7 @@ cd "$ROOT"
 
 BUILD="$ROOT/.build"
 DIST="$ROOT/dist"
-APK_NAME="安空工具箱-v1.4.apk"
+APK_NAME="安空工具箱-v1.5.apk"
 
 echo "==> [1/9] 生成单文件网页应用与应用图标"
 python3 build-web.py
@@ -70,8 +70,8 @@ FLATS="$(find "$BUILD/res" -name '*.flat' | sort | tr '\n' ' ')"
     --java "$BUILD/gen" \
     --min-sdk-version 23 \
     --target-sdk-version 34 \
-    --version-code 9 \
-    --version-name 1.4 \
+    --version-code 10 \
+    --version-name 1.5 \
     --auto-add-overlay \
     $FLATS
 

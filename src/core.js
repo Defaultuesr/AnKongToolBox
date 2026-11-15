@@ -13,7 +13,7 @@ var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, f
 function ic(name, cls) { return akIcon(name, cls); }
 
 var APP_NAME = '安空工具箱';
-var VERSION = '1.4';
+var VERSION = '1.5';
 window.AK_VERSION = VERSION;
 var FEEDBACK_EMAIL = window.AK_FEEDBACK_EMAIL || '3805278668@qq.com';
 
@@ -393,6 +393,7 @@ function pageMe() {
     settingRow('key', '权限说明', '逐项列出权限与用途', 'page', 'permission') +
 
     secLabel('其他') +
+    settingRow('grid', '更多页面', '指南 · 功能地图 · 工具索引 · 说明 · 版本历史', 'page', 'more') +
     settingRow('database', 'Cookie 管理', '查看并清理本机站点数据', 'page', 'cookie') +
     settingRow('download', '下载管理', '已保存到相册的图片', 'page', 'downloads') +
     settingRow('trash', '缓存管理', '占用统计与清理', 'page', 'cache') +
@@ -764,6 +765,18 @@ document.addEventListener('DOMContentLoaded', function () {
         break;
       }
       case 'copy-text': copyText(el.getAttribute('data-copy') || ''); break;
+      case 'export-data': {
+        var dump = {}, cnt = 0;
+        try {
+          for (var li = 0; li < localStorage.length; li++) {
+            var lk = localStorage.key(li);
+            if (lk) { dump[lk] = localStorage.getItem(lk); cnt++; }
+          }
+        } catch (e2) {}
+        var bak = JSON.stringify({ app: APP_NAME, version: VERSION, exportedAt: new Date().toISOString(), items: cnt, data: dump }, null, 2);
+        copyText(bak); toast('已导出 ' + cnt + ' 项本机数据到剪贴板');
+        break;
+      }
       case 'fb-toggle': el.classList.toggle('on'); break;
       case 'page-do': {
         var d = el.getAttribute('data-do');
@@ -866,6 +879,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.AnkongApp = {
   go: go, render: render, state: state, tools: function () { return TOOLS; }, api: api,
+  cats: function () { return CATS; }, pages: function () { return window.AK_PAGES || {}; },
   setInsets: setInsets, applyLayout: applyLayout,
   onBack: function () {
     if (state.quickOpen) { state.quickOpen = false; renderFab(); return; }

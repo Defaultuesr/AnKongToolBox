@@ -310,7 +310,7 @@ T({ id: 'device', name: '设备信息', cat: 'fun', icon: '📲', tint: '#E2E6FF
       ['浏览器内核', navigator.userAgent.match(/(Chrome|Firefox|Safari)\/[\d.]+/) ? navigator.userAgent.match(/(Chrome|Firefox|Safari)\/[\d.]+/)[0] : '—'],
       ['语言 / 地区', navigator.language || '—'],
       ['时区', Intl.DateTimeFormat().resolvedOptions().timeZone || '—'],
-      ['应用版本', 'v' + (window.AK_VERSION || '1.4')]
+      ['应用版本', 'v' + (window.AK_VERSION || '1.5')]
     ];
     return { html: H.kv(rows.map(function (r) { return [r[0], H.esc(String(r[1]))]; }), '本机信息'),
       text: rows.map(function (r) { return r[0] + ': ' + r[1]; }).join('\n') };

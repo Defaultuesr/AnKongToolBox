@@ -233,7 +233,23 @@ var AK_ICON_MAP = {
   cssshadow: 'layers', mdtable: 'table', harmony: 'palette', cssunit: 'ruler',
   bezier: 'wave', lorem: 'text',
   batteryhealth: 'battery', contrast: 'eye', raidcalc: 'database', videobitrate: 'video',
-  typingtest: 'timer', math24: 'calc', diceexpr: 'dice'
+  typingtest: 'timer', math24: 'calc', diceexpr: 'dice',
+
+  /* v1.5 新增 50 个 */
+  wraptext: 'text', parareflow: 'text', aligncols: 'table', masktext: 'lock',
+  initials: 'text', cnplaceholder: 'doc', symbols: 'sparkle', quotefix: 'quote',
+  jsonmerge: 'code', jsonschema: 'code', yaml2json: 'code', toml2json: 'code',
+  html2text: 'code', cssformat: 'brush', diffjson: 'diff', hashbatch: 'hash',
+  tipcalc: 'coin', currencyfmt: 'coin', unitbatch: 'scale', apr: 'percent',
+  bayes: 'chart', circle: 'scope', physics: 'flask', weightedavg: 'chart',
+  medicine: 'clock', caffeine: 'drop', plant: 'calendar', parking: 'traffic',
+  rentsplit: 'home2', expiry: 'calendar', cleanplan: 'list',
+  gitcmd: 'terminal', docker: 'cube', regexref: 'regex', latex: 'code',
+  phonetic: 'volume', currency: 'coin', unicodeblock: 'hash',
+  svggen: 'image', gridgen: 'grid', flexgen: 'layers', fontstack: 'text',
+  borderradius: 'crop', favicon: 'star',
+  dataplan: 'wifi', cpubench: 'speed', printcost: 'receipt',
+  trivia: 'brain', hangman: 'game', maze: 'grid'
 };
 
 /* 分类 → 图标 */

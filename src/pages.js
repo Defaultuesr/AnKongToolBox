@@ -17,6 +17,11 @@ function btn(do_, label, cls) {
 }
 
 var CHANGELOG = [
+  ['v1.5', '2026-11-15', [
+    '新增 50 个实用工具，工具总数达到 275 个：按宽度折行、隐私打码、JSON 深度合并与差异、YAML/TOML 转 JSON、贝叶斯与加权平均、绿植养护、Git/Docker 命令速查、SVG 与 CSS 布局生成等',
+    '新增 15 个内容页与「更多页面」聚合入口，详情页总数达到 30 个：功能地图、工具索引、使用技巧、快捷键、无障碍、数据备份、安全清单、离线说明、版本历史等',
+    '「数据备份」页支持一键导出全部本机数据为 JSON；功能地图与工具索引实时读取工具注册表生成'
+  ]],
   ['v1.4', '2026-11-15', [
     '版本号升级至 1.4，安装包与网页版同步构建，工具总数保持 225 个不变',
     '未改动任何工具的计算逻辑与本地数据，升级后可完全沿用原有收藏、使用记录与语言偏好',
@@ -240,11 +245,11 @@ var AK_PAGES = {
   },
 
   update: {
-    title: '检查更新', sub: '当前版本 v' + (window.AK_VERSION || '1.4'), icon: 'refresh',
+    title: '检查更新', sub: '当前版本 v' + (window.AK_VERSION || '1.5'), icon: 'refresh',
     render: function () {
       return h2('版本信息') + card(
         kv([
-          ['当前版本', 'v' + (window.AK_VERSION || '1.4')],
+          ['当前版本', 'v' + (window.AK_VERSION || '1.5')],
           ['构建日期', '2026-11-15'],
           ['最低系统', 'Android 6.0 (API 23)'],
           ['适配平台', '手机 / 平板 / ChromeOS'],
@@ -366,10 +371,10 @@ var AK_PAGES = {
     title: '关于', sub: '应用信息与致谢', icon: 'info',
     render: function () {
       return '<div class="about-hero"><span class="ah-ic">' + akIcon('grid') + '</span>' +
-        '<b>安空工具箱</b><small>v' + (window.AK_VERSION || '1.4') + ' · 一个 App，装下所有顺手的小工具</small></div>' +
+        '<b>安空工具箱</b><small>v' + (window.AK_VERSION || '1.5') + ' · 一个 App，装下所有顺手的小工具</small></div>' +
         h2('应用信息') + card(
           kv([
-            ['应用名称', '安空工具箱'], ['版本', 'v' + (window.AK_VERSION || '1.4')],
+            ['应用名称', '安空工具箱'], ['版本', 'v' + (window.AK_VERSION || '1.5')],
             ['包名', 'com.ankong.toolbox'], ['最低系统', 'Android 6.0 / API 23'],
             ['目标系统', 'Android 14 / API 34'], ['界面风格', 'Material Design 3 · 浅黄色'],
             ['适配平台', '手机 / 平板 / ChromeOS'], ['工具数量', String(window.AnkongApp ? window.AnkongApp.tools().length : 129) + ' 个'],
@@ -399,6 +404,8 @@ function akPageHtml(id) {
 }
 
 window.AK_PAGES = AK_PAGES;
+window.AK_CHANGELOG = CHANGELOG;
+window.AK_FAQ = FAQ;
 window.akPageHtml = akPageHtml;
 window.akPageTitle = akPageTitle;
 })();
