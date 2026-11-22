@@ -1,11 +1,11 @@
 # 安空工具箱（AnKongToolBox）
 
-> 一个功能齐全、完全离线的多平台实用工具箱 —— 集 **477 个工具**、**15 种界面语言**、**资讯阅读** 与 **自动更新** 于一体，支持 Android / iOS / 网页三端。
+> 一个功能齐全、完全离线的多平台实用工具箱 —— 集 **483 个工具**、**15 种界面语言**、**资讯阅读** 与 **自动更新** 于一体，支持 Android / iOS / Windows / macOS / 网页五端。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-2.4-orange.svg)](https://github.com/Defaultuesr/AnKongToolBox/releases/latest)
+[![Version](https://img.shields.io/badge/version-2.5-orange.svg)](https://github.com/Defaultuesr/AnKongToolBox/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS%20%7C%20Web-blue.svg)](#平台支持)
-[![Tools](https://img.shields.io/badge/tools-477-green.svg)](#功能概览)
+[![Tools](https://img.shields.io/badge/tools-483-green.svg)](#功能概览)
 
 ---
 
@@ -29,7 +29,7 @@
 
 **安空工具箱** 是一款以「轻黄护眼、离线可用、功能全面」为设计理念的工具集合应用。它的核心是一个**单文件 H5 网页（SPA）**，通过原生 WebView 壳打包为 Android APK 与 iOS App，也可以直接在浏览器中打开使用。
 
-- **477 个实用工具**，覆盖查询、文本、媒体、开发、计算、生活、测评、游戏、聚合九大分类
+- **483 个实用工具**，覆盖查询、文本、媒体、开发、计算、生活、测评、游戏、聚合九大分类
 - **绝大多数工具纯离线运行**，输入内容不离开设备，注重隐私
 - **浅黄色护眼主题**，支持 Pad / 平板 / ChromeOS 大屏自适应布局
 - **15 种界面语言**，一键切换，覆盖全球主要语种
@@ -74,9 +74,14 @@
 | --- | --- | --- |
 | **Android** | APK（arm64-v8a / armeabi-v7a，minSdk 23） | ✅ 正式发布 |
 | **iOS** | Xcode 工程源码 + 未签名 IPA 结构包 | ✅ v2.4 起支持 |
+| **Windows** | 便携版 exe（x64，免安装） | ✅ v2.5 起支持 |
+| **macOS** | dmg 磁盘镜像 + 桌面工程源码 | ✅ v2.5 起支持 |
 | **网页** | 单文件 `index.html`，双击即可离线打开 | ✅ 随版本构建 |
 
-> **关于 iOS IPA 的说明**：仓库 Release 中提供的 `.ipa` 为**未签名结构包**，无法直接安装。iOS 平台强制要求苹果签名，请使用 `ios-build/` 中的 Xcode 工程在 macOS 上自行构建并签名。详见 [iOS 工程说明](https://github.com/Defaultuesr/AnKongToolBox/releases)。
+> **关于签名的说明**：桌面端与 iOS 产物均为**未签名**构建。
+> - iOS `.ipa` 无法直接安装，需用 `ios-build/` 的 Xcode 工程在 macOS 上重新签名；
+> - Windows exe 首次运行如遇 SmartScreen，选「更多信息 → 仍要运行」；
+> - macOS dmg 首次打开如遇拦截，在「系统设置 → 隐私与安全性」点「仍要打开」，或执行 `sudo xattr -cr "/Applications/安空工具箱.app"`；如需正式分发，用 `安空工具箱-vX.Y-macOS工程.zip` 在 Mac 上重签。
 
 ---
 
@@ -106,6 +111,8 @@
 | `安空工具箱-vX.Y-项目源码.zip` | Android 项目完整源码 |
 | `安空工具箱-vX.Y-iOS工程.zip` | iOS Xcode 工程（v2.4 起） |
 | `AnKongToolBox-vX.Y-unsigned.ipa` | 未签名 IPA 结构包（v2.4 起） |
+| `安空工具箱-vX.Y-Windows-x64.exe` | Windows 便携版（v2.5 起） |
+| `安空工具箱-vX.Y-macOS.dmg` | macOS 磁盘镜像（v2.5 起） |
 
 应用内也提供 **自动检查更新** 功能，可在「关于」页面手动触发。
 
@@ -130,6 +137,7 @@ ankong-toolbox/
 │   ├── update.js               # 自动更新 / 通用 HTTP 桥
 │   └── style.css               # 浅黄色主题样式
 ├── ios-build/                  # iOS Xcode 工程（v2.4 起）
+├── desktop-build/              # Electron 桌面工程（v2.5 起，Windows/macOS）
 │   └── AnKongToolBox.xcodeproj/
 ├── build-web.py                # 合并 src/ → 单文件 index.html
 ├── build-apk-gradle.sh         # Gradle 构建正式 APK 脚本
@@ -167,6 +175,7 @@ python3 build-web.py
 
 | 版本 | 日期 | 主要变化 |
 | --- | --- | --- |
+| v2.5 | 2026-11-22 | 首发 Windows exe 与 macOS dmg 桌面平台；新增 6 个离线工具，工具总数达 483 |
 | v2.4 | 2026-11-22 | 首次支持 iOS；新增 6 个离线工具，工具总数达 477 |
 | v2.3 | 2026-11-22 | 新增「今天吃什么 / 域名后缀 / 英制单位 / 开源库速查」等 |
 | v2.2 | 2026-11-22 | 移植暮光数据：元素周期表、猫图鉴、一笔画 |
