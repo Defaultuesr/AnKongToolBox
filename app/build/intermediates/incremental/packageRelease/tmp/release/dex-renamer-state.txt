@@ -1,0 +1,7 @@
+#Tue Nov 24 20:10:31 CST 2026
+base.0=/workspace/ankong-toolbox/app/build/intermediates/dex/release/mergeDexRelease/classes.dex
+base.1=/workspace/ankong-toolbox/app/build/intermediates/global_synthetics_dex/release/mergeReleaseGlobalSynthetics/classes.dex
+path.0=classes.dex
+path.1=classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

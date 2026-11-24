@@ -1,0 +1,17 @@
+R_DEF: Internal format may change without notice
+local
+color amber
+color cream
+color cream_dark
+color olive
+color surface
+color surface_dark
+drawable splash_background
+id webview
+layout activity_main
+mipmap ic_launcher
+string app_name
+string app_subtitle
+style AppTheme
+xml backup_rules
+xml data_extraction_rules

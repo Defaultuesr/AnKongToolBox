@@ -1,0 +1,273 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.ankong.toolbox"
+4    android:versionCode="22"
+5    android:versionName="2.7" >
+6
+7    <uses-sdk
+7-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:6:5-74
+8        android:minSdkVersion="23"
+8-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:6:15-41
+9        android:targetSdkVersion="34" />
+9-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:6:42-71
+10
+11    <!-- 平板 / ChromeOS 大屏与任意密度全支持 -->
+12    <supports-screens
+12-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:9:5-14:37
+13        android:anyDensity="true"
+13-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:14:9-34
+14        android:largeScreens="true"
+14-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:12:9-36
+15        android:normalScreens="true"
+15-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:11:9-37
+16        android:smallScreens="true"
+16-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:10:9-36
+17        android:xlargeScreens="true" />
+17-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:13:9-37
+18
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:16:5-67
+19-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:16:22-64
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:17:5-79
+20-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:17:22-76
+21    <uses-permission android:name="android.permission.VIBRATE" />
+21-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:18:5-66
+21-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:18:22-63
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:19:5-65
+22-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:19:22-62
+23    <uses-permission
+23-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:20:5-21:38
+24        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+24-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:20:22-78
+25        android:maxSdkVersion="28" />
+25-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:21:9-35
+26
+27    <!-- 触摸、相机、传感器均非必需：保证无触屏的 ChromeOS / 平板 / 电视设备可安装 -->
+28    <uses-feature
+28-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:24:5-90
+29        android:name="android.hardware.touchscreen"
+29-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:24:19-62
+30        android:required="false" />
+30-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:24:63-87
+31    <uses-feature
+31-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:25:5-85
+32        android:name="android.hardware.camera"
+32-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:25:19-57
+33        android:required="false" />
+33-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:25:58-82
+34    <uses-feature
+34-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:26:5-91
+35        android:name="android.hardware.camera.flash"
+35-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:26:19-63
+36        android:required="false" />
+36-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:26:64-88
+37    <uses-feature
+37-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:27:5-99
+38        android:name="android.hardware.sensor.accelerometer"
+38-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:27:19-71
+39        android:required="false" />
+39-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:27:72-96
+40    <uses-feature
+40-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:28:5-93
+41        android:name="android.hardware.sensor.compass"
+41-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:28:19-65
+42        android:required="false" />
+42-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:28:66-90
+43    <uses-feature
+43-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:29:5-83
+44        android:name="android.hardware.wifi"
+44-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:29:19-55
+45        android:required="false" />
+45-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:29:56-80
+46
+47    <permission
+47-->[androidx.core:core:1.9.0] /root/.gradle/caches/9.3.0/transforms/ee5f14c677d48ba8e340bf02f9f8ff70/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+48        android:name="com.ankong.toolbox.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+48-->[androidx.core:core:1.9.0] /root/.gradle/caches/9.3.0/transforms/ee5f14c677d48ba8e340bf02f9f8ff70/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+49        android:protectionLevel="signature" />
+49-->[androidx.core:core:1.9.0] /root/.gradle/caches/9.3.0/transforms/ee5f14c677d48ba8e340bf02f9f8ff70/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+50
+51    <uses-permission android:name="com.ankong.toolbox.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+51-->[androidx.core:core:1.9.0] /root/.gradle/caches/9.3.0/transforms/ee5f14c677d48ba8e340bf02f9f8ff70/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+51-->[androidx.core:core:1.9.0] /root/.gradle/caches/9.3.0/transforms/ee5f14c677d48ba8e340bf02f9f8ff70/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+52
+53    <application
+53-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:31:5-65:19
+54        android:allowBackup="true"
+54-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:32:9-35
+55        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+55-->[androidx.core:core:1.9.0] /root/.gradle/caches/9.3.0/transforms/ee5f14c677d48ba8e340bf02f9f8ff70/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+56        android:dataExtractionRules="@xml/data_extraction_rules"
+56-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:35:9-65
+57        android:extractNativeLibs="false"
+58        android:fullBackupContent="@xml/backup_rules"
+58-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:34:9-54
+59        android:hardwareAccelerated="true"
+59-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:40:9-43
+60        android:icon="@mipmap/ic_launcher"
+60-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:36:9-43
+61        android:label="@string/app_name"
+61-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:38:9-41
+62        android:resizeableActivity="true"
+62-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:33:9-42
+63        android:roundIcon="@mipmap/ic_launcher"
+63-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:37:9-48
+64        android:supportsRtl="true"
+64-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:39:9-35
+65        android:theme="@style/AppTheme"
+65-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:42:9-40
+66        android:usesCleartextTraffic="false" >
+66-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:41:9-45
+67        <activity
+67-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:44:9-55:20
+68            android:name="com.ankong.toolbox.MainActivity"
+68-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:45:13-41
+69            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|density|fontScale|keyboard|keyboardHidden|navigation|uiMode|layoutDirection"
+69-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:49:13-167
+70            android:exported="true"
+70-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:46:13-36
+71            android:launchMode="singleTop"
+71-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:47:13-43
+72            android:resizeableActivity="true"
+72-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:48:13-46
+73            android:windowSoftInputMode="adjustResize" >
+73-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:50:13-55
+74            <intent-filter>
+74-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:51:13-54:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:52:17-69
+75-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:52:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:53:17-77
+77-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:53:27-74
+78            </intent-filter>
+79        </activity>
+80
+81        <!-- v1.8 内置浏览器：独立 WebView，导出为 false，仅由本应用内部启动 -->
+82        <activity
+82-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:58:9-64:49
+83            android:name="com.ankong.toolbox.BrowserActivity"
+83-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:59:13-44
+84            android:configChanges="orientation|screenSize|screenLayout|smallestScreenSize|density|keyboard|keyboardHidden|navigation|uiMode|layoutDirection"
+84-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:62:13-157
+85            android:exported="false"
+85-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:60:13-37
+86            android:label="@string/app_name"
+86-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:61:13-45
+87            android:resizeableActivity="true"
+87-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:64:13-46
+88            android:windowSoftInputMode="adjustResize" />
+88-->/workspace/ankong-toolbox/app/gradle-res/AndroidManifest.xml:63:13-55
+89
+90        <service
+90-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.1.0] /root/.gradle/caches/9.3.0/transforms/601bdaa7ca2bf81b1166d0a0dd4c77f3/transformed/play-services-mlkit-text-recognition-common-19.1.0/AndroidManifest.xml:9:9-15:19
+91            android:name="com.google.mlkit.common.internal.MlKitComponentDiscoveryService"
+91-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.1.0] /root/.gradle/caches/9.3.0/transforms/601bdaa7ca2bf81b1166d0a0dd4c77f3/transformed/play-services-mlkit-text-recognition-common-19.1.0/AndroidManifest.xml:10:13-91
+92            android:directBootAware="true"
+92-->[com.google.mlkit:common:18.11.0] /root/.gradle/caches/9.3.0/transforms/bdb07e8c4ab946da49a3746ef38c1be5/transformed/common-18.11.0/AndroidManifest.xml:17:13-43
+93            android:exported="false" >
+93-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.1.0] /root/.gradle/caches/9.3.0/transforms/601bdaa7ca2bf81b1166d0a0dd4c77f3/transformed/play-services-mlkit-text-recognition-common-19.1.0/AndroidManifest.xml:11:13-37
+94            <meta-data
+94-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.1.0] /root/.gradle/caches/9.3.0/transforms/601bdaa7ca2bf81b1166d0a0dd4c77f3/transformed/play-services-mlkit-text-recognition-common-19.1.0/AndroidManifest.xml:12:13-14:85
+95                android:name="com.google.firebase.components:com.google.mlkit.vision.text.internal.TextRegistrar"
+95-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.1.0] /root/.gradle/caches/9.3.0/transforms/601bdaa7ca2bf81b1166d0a0dd4c77f3/transformed/play-services-mlkit-text-recognition-common-19.1.0/AndroidManifest.xml:13:17-114
+96                android:value="com.google.firebase.components.ComponentRegistrar" />
+96-->[com.google.android.gms:play-services-mlkit-text-recognition-common:19.1.0] /root/.gradle/caches/9.3.0/transforms/601bdaa7ca2bf81b1166d0a0dd4c77f3/transformed/play-services-mlkit-text-recognition-common-19.1.0/AndroidManifest.xml:14:17-82
+97            <meta-data
+97-->[com.google.mlkit:vision-common:17.3.0] /root/.gradle/caches/9.3.0/transforms/c380f962b3d022694fca36d8e4fbccd8/transformed/vision-common-17.3.0/AndroidManifest.xml:12:13-14:85
+98                android:name="com.google.firebase.components:com.google.mlkit.vision.common.internal.VisionCommonRegistrar"
+98-->[com.google.mlkit:vision-common:17.3.0] /root/.gradle/caches/9.3.0/transforms/c380f962b3d022694fca36d8e4fbccd8/transformed/vision-common-17.3.0/AndroidManifest.xml:13:17-124
+99                android:value="com.google.firebase.components.ComponentRegistrar" />
+99-->[com.google.mlkit:vision-common:17.3.0] /root/.gradle/caches/9.3.0/transforms/c380f962b3d022694fca36d8e4fbccd8/transformed/vision-common-17.3.0/AndroidManifest.xml:14:17-82
+100            <meta-data
+100-->[com.google.mlkit:common:18.11.0] /root/.gradle/caches/9.3.0/transforms/bdb07e8c4ab946da49a3746ef38c1be5/transformed/common-18.11.0/AndroidManifest.xml:20:13-22:85
+101                android:name="com.google.firebase.components:com.google.mlkit.common.internal.CommonComponentRegistrar"
+101-->[com.google.mlkit:common:18.11.0] /root/.gradle/caches/9.3.0/transforms/bdb07e8c4ab946da49a3746ef38c1be5/transformed/common-18.11.0/AndroidManifest.xml:21:17-120
+102                android:value="com.google.firebase.components.ComponentRegistrar" />
+102-->[com.google.mlkit:common:18.11.0] /root/.gradle/caches/9.3.0/transforms/bdb07e8c4ab946da49a3746ef38c1be5/transformed/common-18.11.0/AndroidManifest.xml:22:17-82
+103        </service>
+104
+105        <provider
+105-->[com.google.mlkit:common:18.11.0] /root/.gradle/caches/9.3.0/transforms/bdb07e8c4ab946da49a3746ef38c1be5/transformed/common-18.11.0/AndroidManifest.xml:9:9-13:38
+106            android:name="com.google.mlkit.common.internal.MlKitInitProvider"
+106-->[com.google.mlkit:common:18.11.0] /root/.gradle/caches/9.3.0/transforms/bdb07e8c4ab946da49a3746ef38c1be5/transformed/common-18.11.0/AndroidManifest.xml:10:13-78
+107            android:authorities="com.ankong.toolbox.mlkitinitprovider"
+107-->[com.google.mlkit:common:18.11.0] /root/.gradle/caches/9.3.0/transforms/bdb07e8c4ab946da49a3746ef38c1be5/transformed/common-18.11.0/AndroidManifest.xml:11:13-69
+108            android:exported="false"
+108-->[com.google.mlkit:common:18.11.0] /root/.gradle/caches/9.3.0/transforms/bdb07e8c4ab946da49a3746ef38c1be5/transformed/common-18.11.0/AndroidManifest.xml:12:13-37
+109            android:initOrder="99" />
+109-->[com.google.mlkit:common:18.11.0] /root/.gradle/caches/9.3.0/transforms/bdb07e8c4ab946da49a3746ef38c1be5/transformed/common-18.11.0/AndroidManifest.xml:13:13-35
+110
+111        <activity
+111-->[com.google.android.gms:play-services-base:18.5.0] /root/.gradle/caches/9.3.0/transforms/af789238ab9a585b62439a0e5c22fc74/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:9-173
+112            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+112-->[com.google.android.gms:play-services-base:18.5.0] /root/.gradle/caches/9.3.0/transforms/af789238ab9a585b62439a0e5c22fc74/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:19-85
+113            android:exported="false"
+113-->[com.google.android.gms:play-services-base:18.5.0] /root/.gradle/caches/9.3.0/transforms/af789238ab9a585b62439a0e5c22fc74/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:146-170
+114            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+114-->[com.google.android.gms:play-services-base:18.5.0] /root/.gradle/caches/9.3.0/transforms/af789238ab9a585b62439a0e5c22fc74/transformed/play-services-base-18.5.0/AndroidManifest.xml:5:86-145
+115
+116        <meta-data
+116-->[com.google.android.gms:play-services-basement:18.4.0] /root/.gradle/caches/9.3.0/transforms/a819a67e29ed99c9819dc77e7ac1b4b3/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:9-122
+117            android:name="com.google.android.gms.version"
+117-->[com.google.android.gms:play-services-basement:18.4.0] /root/.gradle/caches/9.3.0/transforms/a819a67e29ed99c9819dc77e7ac1b4b3/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:20-65
+118            android:value="@integer/google_play_services_version" />
+118-->[com.google.android.gms:play-services-basement:18.4.0] /root/.gradle/caches/9.3.0/transforms/a819a67e29ed99c9819dc77e7ac1b4b3/transformed/play-services-basement-18.4.0/AndroidManifest.xml:6:66-119
+119
+120        <provider
+120-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/9.3.0/transforms/d9cc09f243ddb6f27ab355d14729b309/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+121            android:name="androidx.startup.InitializationProvider"
+121-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/9.3.0/transforms/d9cc09f243ddb6f27ab355d14729b309/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+122            android:authorities="com.ankong.toolbox.androidx-startup"
+122-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/9.3.0/transforms/d9cc09f243ddb6f27ab355d14729b309/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+123            android:exported="false" >
+123-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/9.3.0/transforms/d9cc09f243ddb6f27ab355d14729b309/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+124            <meta-data
+124-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/9.3.0/transforms/d9cc09f243ddb6f27ab355d14729b309/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+125                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+125-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/9.3.0/transforms/d9cc09f243ddb6f27ab355d14729b309/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+126                android:value="androidx.startup" />
+126-->[androidx.emoji2:emoji2:1.2.0] /root/.gradle/caches/9.3.0/transforms/d9cc09f243ddb6f27ab355d14729b309/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+127            <meta-data
+127-->[androidx.lifecycle:lifecycle-process:2.4.1] /root/.gradle/caches/9.3.0/transforms/f1e2b83ff12006677fb195e56480b4c1/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+128                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+128-->[androidx.lifecycle:lifecycle-process:2.4.1] /root/.gradle/caches/9.3.0/transforms/f1e2b83ff12006677fb195e56480b4c1/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+129                android:value="androidx.startup" />
+129-->[androidx.lifecycle:lifecycle-process:2.4.1] /root/.gradle/caches/9.3.0/transforms/f1e2b83ff12006677fb195e56480b4c1/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+130        </provider>
+131
+132        <service
+132-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/9.3.0/transforms/624882782c04f82f30b583e1a5f9209b/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:29:9-35:19
+133            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+133-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/9.3.0/transforms/624882782c04f82f30b583e1a5f9209b/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:30:13-103
+134            android:exported="false" >
+134-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/9.3.0/transforms/624882782c04f82f30b583e1a5f9209b/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:31:13-37
+135            <meta-data
+135-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/9.3.0/transforms/624882782c04f82f30b583e1a5f9209b/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:32:13-34:39
+136                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+136-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/9.3.0/transforms/624882782c04f82f30b583e1a5f9209b/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:33:17-94
+137                android:value="cct" />
+137-->[com.google.android.datatransport:transport-backend-cct:2.3.3] /root/.gradle/caches/9.3.0/transforms/624882782c04f82f30b583e1a5f9209b/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:34:17-36
+138        </service>
+139        <service
+139-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/9.3.0/transforms/8604699f5d4378ac013cd9990831c255/transformed/transport-runtime-2.2.6/AndroidManifest.xml:26:9-30:19
+140            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+140-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/9.3.0/transforms/8604699f5d4378ac013cd9990831c255/transformed/transport-runtime-2.2.6/AndroidManifest.xml:27:13-117
+141            android:exported="false"
+141-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/9.3.0/transforms/8604699f5d4378ac013cd9990831c255/transformed/transport-runtime-2.2.6/AndroidManifest.xml:28:13-37
+142            android:permission="android.permission.BIND_JOB_SERVICE" >
+142-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/9.3.0/transforms/8604699f5d4378ac013cd9990831c255/transformed/transport-runtime-2.2.6/AndroidManifest.xml:29:13-69
+143        </service>
+144
+145        <receiver
+145-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/9.3.0/transforms/8604699f5d4378ac013cd9990831c255/transformed/transport-runtime-2.2.6/AndroidManifest.xml:32:9-34:40
+146            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+146-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/9.3.0/transforms/8604699f5d4378ac013cd9990831c255/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
+147            android:exported="false" />
+147-->[com.google.android.datatransport:transport-runtime:2.2.6] /root/.gradle/caches/9.3.0/transforms/8604699f5d4378ac013cd9990831c255/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
+148    </application>
+149
+150</manifest>
