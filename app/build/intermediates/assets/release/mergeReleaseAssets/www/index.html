@@ -1752,6 +1752,248 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
+/* v2.8 · 青草绿主题（复刻暮光浅绿 MD3） */
+[data-accent="grass"][data-theme="light"] {
+  --md-sys-color-primary: #2e6a44;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #b1f1c1;
+  --md-sys-color-on-primary-container: #00210e;
+  --md-sys-color-secondary: #4f6353;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #d2e8d4;
+  --md-sys-color-on-secondary-container: #0d1f13;
+  --md-sys-color-tertiary: #3a646f;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #beeaf6;
+  --md-sys-color-on-tertiary-container: #001f26;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-background: #f6fbf3;
+  --md-sys-color-on-background: #181d18;
+  --md-sys-color-surface: #f6fbf3;
+  --md-sys-color-surface-dim: #d7dbd4;
+  --md-sys-color-surface-bright: #f6fbf3;
+  --md-sys-color-on-surface: #181d18;
+  --md-sys-color-on-surface-variant: #414942;
+  --md-sys-color-surface-variant: #dde5db;
+  --md-sys-color-outline: #717971;
+  --md-sys-color-outline-variant: #c1c9bf;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #2c322d;
+  --md-sys-color-inverse-on-surface: #edf2eb;
+  --md-sys-color-inverse-primary: #96d5a6;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f0f5ed;
+  --md-sys-color-surface-container: #ebefe8;
+  --md-sys-color-surface-container-high: #e5eae2;
+  --md-sys-color-surface-container-highest: #dfe4dc;
+  --md-sys-color-surface-tint: #2e6a44;
+}
+
+[data-accent="grass"][data-theme="dark"] {
+  --md-sys-color-primary: #96d5a6;
+  --md-sys-color-on-primary: #00391c;
+  --md-sys-color-primary-container: #12512e;
+  --md-sys-color-on-primary-container: #b1f1c1;
+  --md-sys-color-secondary: #b6ccb8;
+  --md-sys-color-on-secondary: #223527;
+  --md-sys-color-secondary-container: #384b3c;
+  --md-sys-color-on-secondary-container: #d2e8d4;
+  --md-sys-color-tertiary: #a2ceda;
+  --md-sys-color-on-tertiary: #023640;
+  --md-sys-color-tertiary-container: #214c57;
+  --md-sys-color-on-tertiary-container: #beeaf6;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffdad6;
+  --md-sys-color-background: #101510;
+  --md-sys-color-on-background: #dfe4dc;
+  --md-sys-color-surface: #101510;
+  --md-sys-color-surface-dim: #101510;
+  --md-sys-color-surface-bright: #353a35;
+  --md-sys-color-on-surface: #dfe4dc;
+  --md-sys-color-on-surface-variant: #c1c9bf;
+  --md-sys-color-surface-variant: #414942;
+  --md-sys-color-outline: #8b938a;
+  --md-sys-color-outline-variant: #414942;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #dfe4dc;
+  --md-sys-color-inverse-on-surface: #2c322d;
+  --md-sys-color-inverse-primary: #2e6a44;
+  --md-sys-color-surface-container-lowest: #0a0f0b;
+  --md-sys-color-surface-container-low: #181d18;
+  --md-sys-color-surface-container: #1c211c;
+  --md-sys-color-surface-container-high: #262b27;
+  --md-sys-color-surface-container-highest: #313631;
+  --md-sys-color-surface-tint: #96d5a6;
+}
+
+
+/* ============================================================
+   v2.8 · 时间屏幕（一比一复刻暮光 4.0.6 MD3 桌面钟）
+   ============================================================ */
+.ts-app {
+  --ts-accent: #5B4BB7;
+  --ts-lav: #DCD6F7;
+  --ts-lav2: #EDE9FB;
+  --ts-panel: #FBE4EC;
+  --ts-panel2: #FDF0F5;
+  --ts-ink: #4A3F86;
+  --ts-blob: #4B3F97;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--md-sys-color-outline-variant);
+  margin-bottom: 14px;
+}
+.ts-app[data-look="dark"] {
+  --ts-lav: #2A2447; --ts-lav2: #372F5E; --ts-panel: #3A2E42; --ts-panel2: #463847;
+  --ts-ink: #EDE4FF; --ts-blob: #B9A7F7; --ts-accent: #C3B3FF;
+}
+.ts-app[data-look="soft"] {
+  --ts-lav: #F0EAFB; --ts-lav2: #FAF6FF; --ts-panel: #FCE9F0; --ts-panel2: #FFF4F8;
+  --ts-ink: #6B5BA8; --ts-blob: #7C6CC4; --ts-accent: #8B7BD0;
+}
+
+/* 时钟舞台：薰衣草渐变 + 居中 */
+.ts-stage {
+  position: relative;
+  min-height: 300px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(160deg, var(--ts-lav2) 0%, var(--ts-lav) 60%, var(--ts-lav) 100%);
+  padding: 26px 16px 8px;
+  overflow: hidden;
+}
+.ts-clock { display: flex; align-items: center; justify-content: center; gap: 14px; width: 100%; }
+
+/* bubble 模板（封面默认） */
+.ts-blk {
+  font-size: 40px; font-weight: 800; color: var(--ts-ink);
+  background: color-mix(in srgb, var(--ts-accent) 14%, transparent);
+  border-radius: 22px; padding: 16px 18px; line-height: 1;
+}
+.ts-blk-r { border-radius: 50%; padding: 18px 20px; font-size: 30px; }
+.ts-blob {
+  position: relative; font-size: 48px; font-weight: 800; color: #fff;
+  width: 140px; height: 140px; display: flex; align-items: center; justify-content: center;
+  background: var(--ts-blob);
+  /* 波浪花边：SVG blob 路径复刻暮光的花瓣形时钟底 */
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23000' d='M50 4C60 4 64 12 74 15C84 18 94 22 94 33C94 43 87 49 87 58C87 68 92 75 84 82C76 89 66 86 56 90C47 94 42 98 33 94C24 90 25 81 18 75C11 69 5 64 6 54C7 45 14 41 15 32C16 23 13 14 22 10C30 6 40 4 50 4Z'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23000' d='M50 4C60 4 64 12 74 15C84 18 94 22 94 33C94 43 87 49 87 58C87 68 92 75 84 82C76 89 66 86 56 90C47 94 42 98 33 94C24 90 25 81 18 75C11 69 5 64 6 54C7 45 14 41 15 32C16 23 13 14 22 10C30 6 40 4 50 4Z'/%3E%3C/svg%3E") center/contain no-repeat;
+  animation: ts-blob-morph 12s ease-in-out infinite;
+}
+@keyframes ts-blob-morph {
+  0%,100% { transform: rotate(0deg) scale(1); }
+  50%     { transform: rotate(8deg) scale(1.04); }
+}
+
+/* minimal */
+.ts-minimal { gap: 10px; }
+.ts-minimal span { font-size: 56px; font-weight: 800; color: var(--ts-ink); }
+.ts-minimal em { font-size: 34px; font-style: normal; color: var(--ts-accent); }
+.ts-minimal small { font-size: 20px; color: var(--ts-ink); opacity: .6; }
+
+/* dial */
+.ts-dialface { width: 172px; height: 172px; border-radius: 50%; border: 8px solid var(--ts-accent); position: relative;
+  display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--ts-accent) 8%, transparent); }
+.ts-dialface i { position: absolute; width: 4px; height: 58px; background: var(--ts-accent); top: 16px; left: 50%; transform: translateX(-50%); transform-origin: bottom; border-radius: 3px; }
+.ts-dialface b { font-size: 26px; color: var(--ts-ink); }
+
+/* dual */
+.ts-dual div { font-size: 52px; font-weight: 800; color: var(--ts-ink); background: color-mix(in srgb, var(--ts-accent) 14%, transparent);
+  border-radius: 24px; padding: 14px 18px; }
+.ts-dual div + div { color: #fff; background: var(--ts-blob); }
+.ts-dual small { font-size: 22px; color: var(--ts-accent); align-self: flex-end; margin-bottom: 14px; }
+
+/* stack */
+.ts-stack { flex-direction: column; gap: 4px; }
+.ts-stack b { font-size: 44px; line-height: 1; color: var(--ts-ink); }
+.ts-stack b:nth-child(2) { color: var(--ts-blob); }
+.ts-stack b:nth-child(3) { font-size: 26px; color: var(--ts-accent); }
+
+/* orbit */
+.ts-orbit { position: relative; height: 200px; }
+.ts-orbit-ring { width: 180px; height: 180px; border-radius: 50%; border: 6px dashed var(--ts-accent);
+  display: flex; align-items: center; justify-content: center; }
+.ts-orbit-ring span { font-size: 40px; font-weight: 800; color: var(--ts-ink); }
+.ts-orbit-sec { position: absolute; top: -4px; right: 6%; width: 40px; height: 40px; border-radius: 50%;
+  background: var(--ts-blob); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; }
+
+/* ribbon */
+.ts-ribbon { flex-direction: column; gap: 8px; }
+.ts-ribbon-a { font-size: 62px; font-weight: 800; color: #fff; background: var(--ts-blob); border-radius: 22px; padding: 4px 30px; }
+.ts-ribbon-b { font-size: 28px; font-weight: 700; color: var(--ts-ink); letter-spacing: 4px; }
+
+/* mixed */
+.ts-mixed { position: relative; height: 200px; }
+.ts-mix-bubble { width: 120px; height: 120px; border-radius: 50%; background: var(--ts-blob); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 44px; font-weight: 800; }
+.ts-mix-num { position: absolute; right: 8%; top: 10px; font-size: 40px; font-weight: 800; color: var(--ts-ink); }
+.ts-mix-sec { position: absolute; right: 12%; bottom: 14px; font-size: 20px; color: var(--ts-accent); }
+
+/* poster */
+.ts-poster { flex-direction: column; align-items: flex-start; }
+.ts-poster-h { font-size: 72px; font-weight: 800; line-height: .9; color: var(--ts-ink); }
+.ts-poster-m { font-size: 34px; color: var(--ts-blob); font-weight: 700; }
+.ts-poster-s { font-size: 18px; color: var(--ts-accent); }
+.ts-poster-cap { margin-top: 8px; font-size: 10px; letter-spacing: 4px; color: var(--ts-ink); opacity: .5; }
+
+/* focus */
+.ts-focus { flex-direction: column; }
+.ts-focus-tag { font-size: 10px; letter-spacing: 5px; color: var(--ts-accent); font-weight: 700; }
+.ts-focus-n { font-size: 66px; font-weight: 800; color: var(--ts-ink); line-height: 1.1; }
+.ts-focus-s { font-size: 26px; color: var(--ts-blob); font-weight: 700; }
+
+/* 粉色控制面板 */
+.ts-panel {
+  background: var(--ts-panel);
+  border-radius: 20px 20px 0 0;
+  padding: 12px 14px 16px;
+  margin-top: -6px;
+  position: relative;
+}
+.ts-panel-head { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; color: var(--ts-ink); }
+.ts-panel-head b { font-size: 14px; font-weight: 700; }
+.ts-back { font-size: 16px; }
+.ts-timer { margin-left: auto; font-size: 10px; background: color-mix(in srgb, var(--ts-ink) 10%, transparent);
+  padding: 3px 8px; border-radius: 10px; }
+.ts-x { font-size: 16px; opacity: .7; }
+.ts-panel-body { display: grid; grid-template-columns: 1.6fr 1fr; gap: 10px; }
+.ts-sec { background: var(--ts-panel2); border-radius: 14px; padding: 10px; }
+.ts-sec-title { font-size: 11px; font-weight: 700; color: var(--ts-ink); margin-bottom: 9px; display: flex; align-items: center; gap: 4px; }
+.ts-ic-clock, .ts-ic-palette { font-size: 13px; }
+.ts-tpl-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.ts-tpl { background: color-mix(in srgb, var(--ts-accent) 8%, #fff); border: 1px solid transparent;
+  border-radius: 10px; padding: 7px 4px 6px; text-align: center; color: var(--ts-ink);
+  display: flex; flex-direction: column; align-items: center; gap: 3px; transition: transform .15s cubic-bezier(.32,.72,0,1), border-color .15s; }
+.ts-tpl:active { transform: scale(.92); }
+.ts-tpl.on { border-color: var(--ts-accent); box-shadow: 0 0 0 1px var(--ts-accent) inset; background: color-mix(in srgb, var(--ts-accent) 16%, #fff); }
+.ts-tpl-demo { height: 18px; display: flex; align-items: center; justify-content: center; position: relative; }
+.ts-tpl b { font-size: 10px; font-weight: 700; }
+.ts-tpl small { font-size: 7px; opacity: .6; line-height: 1; }
+.ts-sec-appear { display: flex; flex-direction: column; }
+.ts-looks { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; margin-top: 2px; }
+.ts-look-label { font-size: 10px; color: var(--ts-ink); opacity: .7; display: inline-flex; align-items: center; gap: 3px; width: 100%; margin-bottom: 4px; }
+.ts-look { font-size: 10px; color: var(--ts-ink); border: 1px solid color-mix(in srgb, var(--ts-ink) 25%, transparent);
+  border-radius: 12px; padding: 3px 9px; background: transparent; }
+.ts-look.on { background: var(--ts-accent); color: #fff; border-color: var(--ts-accent); }
+
+@media (max-width: 560px) {
+  .ts-blob { width: 108px; height: 108px; font-size: 38px; }
+  .ts-blk { font-size: 30px; padding: 12px 13px; }
+  .ts-blk-r { font-size: 22px; padding: 14px; }
+  .ts-panel-body { grid-template-columns: 1fr; }
+  .ts-tpl-grid { grid-template-columns: repeat(5, 1fr); }
+  .ts-stage { min-height: 240px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ts-blob { animation: none; }
+}
+
 </style>
 </head>
 <body>
@@ -7903,6 +8145,21 @@ window.AK_I18N_EXTRA = (window.AK_I18N_EXTRA || []).concat([
   ]);
 })();
 
+/* ===== i18n-v28.js ===== */
+/* 安空工具箱 — v2.8 多语言词条（新工具：时间屏幕） */
+window.AK_I18N_EXTRA = (window.AK_I18N_EXTRA || []).concat([
+  ["时间屏幕", "Time Screen", "タイムスクリーン", "Écran temps"]
+]);
+(function(){
+  var D = window.AK_I18N_MORE = window.AK_I18N_MORE || {
+    cols: ['de','es','ko','ru','pt','it','nl','tr','vi','id'],
+    rows: [], patterns: [], words: []
+  };
+  D.rows = D.rows.concat([
+  ["时间屏幕", "Zeitbildschirm", "Pantalla de tiempo", "타임 스크린", "Экран времени", "Tela de tempo", "Schermo tempo", "Tijdscherm", "Zaman ekranı", "Màn hình thời gian", "Layar waktu"]
+  ]);
+})();
+
 /* ===== i18n.js ===== */
 /* ============================================================
    安空工具箱 — 多语言运行时（i18n）
@@ -8443,6 +8700,11 @@ function btn(do_, label, cls) {
 }
 
 var CHANGELOG = [
+  ['v2.8', '2026-11-24', [
+    '新增「时间屏幕」工具，一比一复刻暮光工具箱 4.0.6 的 Material Design 3 桌面钟：薰衣草背景、波浪花边时钟、粉色模板面板',
+    '内置 10 款时钟模板（焦点 / 海报 / 极简 / 表盘 / 双块 / 堆叠 / 轨道 / 气泡 / 混合 / 丝带）与 3 种外观（主题 / 暗色 / 柔和），实时预览切换',
+    '复刻视频中的 8 周年「为爱发电 · 持续更新」主题氛围与浅绿 MD3 视觉元素'
+  ]],
   ['v2.7', '2026-11-24', [
     'UI 全面改用 M3E Canvas（lnkiai.github.io/m3e-canvas）设计并导出：所有配色角色、字体、图标、圆角与动效素材均取自该网站生成的 Material 3 Expressive 规范',
     '新增网站同款 Roboto 字体与 Material Symbols Rounded 图标字体（内联离线可用）；默认主题切换为优雅紫（网站 Purple baseline 精确色彩角色）',
@@ -8740,7 +9002,7 @@ var AK_PAGES = {
   },
 
   update: {
-    title: '检查更新', sub: '当前版本 v' + (window.AK_VERSION || '2.7'), icon: 'refresh',
+    title: '检查更新', sub: '当前版本 v' + (window.AK_VERSION || '2.8'), icon: 'refresh',
     render: function () {
       var U = window.AK_UPDATE;
       var s = U ? U.get() : { state: 'idle' };
@@ -8752,7 +9014,7 @@ var AK_PAGES = {
         notes = h2('新版本更新说明') + card('<pre class="upd-notes">' + E(s.body) + '</pre>');
       }
       var rows = [
-        ['当前版本', 'v' + (window.AK_VERSION || '2.7')],
+        ['当前版本', 'v' + (window.AK_VERSION || '2.8')],
         ['构建日期', '2026-11-15'],
         ['最低系统', 'Android 6.0 (API 23)'],
         ['适配平台', '手机 / 平板 / ChromeOS'],
@@ -8853,7 +9115,7 @@ var AK_PAGES = {
       var A = window.AnkongApp, st = A ? A.state : { theme: 'auto', accent: 'amber' };
       var themes = [['auto', '跟随系统'], ['light', '浅色'], ['dark', '深色']];
       var accents = [
-        ['purple', '优雅紫', '#6750A4'], ['amber', '浅黄', '#FAE185'], ['mint', '薄荷', '#BFE6D2'], ['sakura', '樱粉', '#F5D6DE'],
+        ['purple', '优雅紫', '#6750A4'], ['grass', '青草绿', '#2E6A44'], ['amber', '浅黄', '#FAE185'], ['mint', '薄荷', '#BFE6D2'], ['sakura', '樱粉', '#F5D6DE'],
         ['sky', '天蓝', '#CBE1F3'], ['lilac', '丁香', '#E1D6F2']
       ];
       var L = window.AKI18N;
@@ -8893,15 +9155,17 @@ var AK_PAGES = {
     title: '关于', sub: '应用信息与致谢', icon: 'info',
     render: function () {
       return '<div class="about-hero"><span class="ah-ic">' + akIcon('grid') + '</span>' +
-        '<b>安空工具箱</b><small>v' + (window.AK_VERSION || '2.7') + ' · 一个 App，装下所有顺手的小工具</small></div>' +
+        '<b>安空工具箱</b><small>v' + (window.AK_VERSION || '2.8') + ' · 一个 App，装下所有顺手的小工具</small></div>' +
         h2('应用信息') + card(
           kv([
-            ['应用名称', '安空工具箱'], ['版本', 'v' + (window.AK_VERSION || '2.7')],
+            ['应用名称', '安空工具箱'], ['版本', 'v' + (window.AK_VERSION || '2.8')],
             ['包名', 'com.ankong.toolbox'], ['最低系统', 'Android 6.0 / API 23'],
-            ['目标系统', 'Android 14 / API 34'], ['界面风格', 'Material Design 3 · 浅黄色'],
+            ['目标系统', 'Android 14 / API 34'], ['界面风格', 'Material Design 3 Expressive'],
             ['适配平台', '手机 / 平板 / ChromeOS'], ['工具数量', String(window.AnkongApp ? window.AnkongApp.tools().length : 129) + ' 个'],
             ['联网需求', '核心工具完全离线'], ['广告 / 账号 / 埋点', '无']
           ])
+        ) + h2('致敬') + card(
+          para('「时间屏幕」桌面钟一比一复刻自暮光工具箱 4.0.6 的 Material Design 3 设计（见 B 站官方宣传视频）。向坚持「为爱发电 · 持续更新」八年的开发者致敬——纯净无广、用户意见至上，愿你归来仍是少年。')
         ) + h2('实现说明') + card(
           para('界面与全部工具均为独立实现：原生 HTML / CSS / JavaScript 单页应用 + 轻量 Android WebView 壳。未反编译、未复制任何第三方应用的代码、图标或品牌资源。') +
           para('二维码生成使用 MIT 许可的 qrcode-generator（内嵌本地），其余功能不依赖第三方库。')
@@ -9148,9 +9412,9 @@ var P = {
 
   /* ---------- 7. 主题与配色 ---------- */
   themes: {
-    title: '主题与配色', sub: 'Material 3 Expressive · M3E Canvas 设计 · 六套主题色', icon: 'palette',
+    title: '主题与配色', sub: 'Material 3 Expressive · M3E Canvas 设计 · 七套主题色', icon: 'palette',
     render: function () {
-      var C = [['purple', '优雅紫', '#6750A4'], ['amber', '浅黄', '#FAE185'], ['mint', '薄荷', '#A8DCC0'],
+      var C = [['purple', '优雅紫', '#6750A4'], ['grass', '青草绿', '#2E6A44'], ['amber', '浅黄', '#FAE185'], ['mint', '薄荷', '#A8DCC0'],
         ['sakura', '樱粉', '#F3BFCB'], ['sky', '天蓝', '#A9CFEA'], ['lilac', '丁香', '#C9BCE8']];
       var sw = C.map(function (c) {
         return '<div style="text-align:center;min-width:74px"><div style="width:46px;height:46px;border-radius:50%;background:' + c[2] +
@@ -9393,7 +9657,7 @@ function cmp(a, b) {
   }
   return 0;
 }
-function localVersion() { return String(window.AK_VERSION || '2.7'); }
+function localVersion() { return String(window.AK_VERSION || '2.8'); }
 
 /* ---------------- 状态 ---------------- */
 var IDLE = { state: 'idle', version: '', checkedAt: 0, error: '' };
@@ -29716,6 +29980,139 @@ T({ id: 'strTransform', name: '字符串变换', cat: 'text', tint: '#E6E0E9',
     ]), '反转：' + rev + '\n字符数：' + s.length + '，词数：' + words);
   }});
 
+/* ===== tools-v28.js ===== */
+/* ============================================================
+   安空工具箱 v2.8 — 一比一复刻暮光 4.0.6 的 MD3「时间屏幕」桌面钟
+   素材与布局来源：B站视频 BV1NVbJ6TE4T（风风green_official）逐帧 + 封面
+   · 薰衣草背景 + 波浪花边(blob)时钟 + 粉色模板面板
+   · 10 个模板（焦点/海报/极简/表盘/双块/堆叠/轨道/气泡/混合/丝带）
+   · 外观：主题 / 暗色 / 柔和；实时时钟
+   全部本地运行，ES5 兼容
+   ============================================================ */
+
+var AK_TSCREEN_TPLS = [
+  { id: 'focus',   name: '焦点',   sub: '醒目 DOI',   demo: 'focus' },
+  { id: 'poster',  name: '海报',   sub: '信息分区',   demo: 'poster' },
+  { id: 'minimal', name: '极简',   sub: '低干扰',     demo: 'minimal' },
+  { id: 'dial',    name: '表盘',   sub: '模拟时针',   demo: 'dial' },
+  { id: 'dual',    name: '双块',   sub: '时分双块',   demo: 'dual' },
+  { id: 'stack',   name: '堆叠',   sub: '纵向排版',   demo: 'stack' },
+  { id: 'orbit',   name: '轨道',   sub: '环形节点',   demo: 'orbit' },
+  { id: 'bubble',  name: '气泡',   sub: '形状组合',   demo: 'bubble' },
+  { id: 'mixed',   name: '混合',   sub: '数据同屏',   demo: 'mixed' },
+  { id: 'ribbon',  name: '丝带',   sub: '横向条纹',   demo: 'ribbon' }
+];
+
+T({ id: 'timeScreen', name: '时间屏幕', cat: 'life', icon: '钟', tint: '#DCD6F7',
+  desc: 'MD3 桌面钟 · 10 款模板一比一复刻', tags: '时间 桌面钟 时钟 屏幕 MD3 暮光 花钟',
+  note: '界面一比一复刻暮光工具箱 4.0.6 的「时间屏幕」（见 B 站官方宣传视频）。模板与外观均可实时切换。',
+  custom: function (host) {
+    var sel = 'bubble', look = 'theme', timer = null;
+
+    function p2(n) { return n < 10 ? '0' + n : String(n); }
+    function now() {
+      var d = new Date();
+      return { h: p2(d.getHours()), m: p2(d.getMinutes()), s: p2(d.getSeconds()) };
+    }
+
+    // 模板小示意图（复刻面板里的紫色缩略图）
+    function demo(kind) {
+      var b = 'var(--ts-accent)';
+      var m = {
+        focus:   '<span style="width:26px;height:14px;background:' + b + ';border-radius:5px;display:inline-block"></span><span style="width:6px;height:6px;background:' + b + ';opacity:.45;border-radius:50%;display:inline-block;margin-left:3px"></span>',
+        poster:  '<span style="width:22px;height:14px;background:' + b + ';border-radius:4px;display:inline-block"></span><span style="width:10px;height:14px;background:' + b + ';opacity:.3;border-radius:4px;display:inline-block;margin-left:2px"></span>',
+        minimal: '<span style="width:28px;height:3px;background:' + b + ';border-radius:2px;display:inline-block"></span>',
+        dial:    '<span style="width:14px;height:14px;border:2px solid ' + b + ';border-radius:50%;display:inline-block;position:relative"></span><span style="position:absolute;width:6px;height:2px;background:' + b + ';transform:rotate(-35deg)"></span>',
+        dual:    '<span style="width:12px;height:14px;background:' + b + ';border-radius:4px;display:inline-block"></span><span style="width:12px;height:14px;background:' + b + ';opacity:.55;border-radius:4px;display:inline-block;margin-left:2px"></span>',
+        stack:   '<span style="width:26px;height:5px;background:' + b + ';border-radius:3px;display:inline-block;margin-bottom:3px"></span><span style="width:18px;height:5px;background:' + b + ';opacity:.5;border-radius:3px;display:inline-block"></span>',
+        orbit:   '<span style="width:15px;height:15px;border:2px solid ' + b + ';border-radius:50%;display:inline-block;position:relative"></span><span style="position:absolute;width:5px;height:5px;background:' + b + ';border-radius:50%;top:-2px;right:-1px"></span>',
+        bubble:  '<span style="width:16px;height:16px;background:' + b + ';border-radius:50%;display:inline-block"></span><span style="width:8px;height:8px;background:' + b + ';opacity:.4;border-radius:50%;display:inline-block;margin-left:2px"></span>',
+        mixed:   '<span style="width:9px;height:9px;background:' + b + ';opacity:.5;border-radius:50%;display:inline-block"></span><span style="width:16px;height:9px;background:' + b + ';border-radius:4px;display:inline-block;margin-left:2px"></span>',
+        ribbon:  '<span style="width:28px;height:9px;background:' + b + ';border-radius:5px;display:inline-block"></span><span style="width:18px;height:4px;background:' + b + ';opacity:.5;border-radius:3px;display:inline-block;margin-left:2px"></span>'
+      };
+      return m[kind] || m.bubble;
+    }
+
+    // 根据模板生成大时钟主体
+    function clockHtml(t) {
+      if (sel === 'minimal') {
+        return '<div class="ts-clock ts-minimal"><span>' + t.h + '</span><em>' + t.m + '</em><small>' + t.s + '</small></div>';
+      }
+      if (sel === 'dial') {
+        return '<div class="ts-clock ts-dial"><div class="ts-dialface"><i></i><b>' + t.h + ':' + t.m + '</b></div></div>';
+      }
+      if (sel === 'dual') {
+        return '<div class="ts-clock ts-dual"><div>' + t.h + '</div><div>' + t.m + '</div><small>' + t.s + '</small></div>';
+      }
+      if (sel === 'stack') {
+        return '<div class="ts-clock ts-stack"><b>' + t.h + '</b><b>' + t.m + '</b><b>' + t.s + '</b></div>';
+      }
+      if (sel === 'orbit') {
+        return '<div class="ts-clock ts-orbit"><div class="ts-orbit-ring"><span>' + t.h + ':' + t.m + '</span></div><div class="ts-orbit-sec">' + t.s + '</div></div>';
+      }
+      if (sel === 'ribbon') {
+        return '<div class="ts-clock ts-ribbon"><div class="ts-ribbon-a">' + t.h + '</div><div class="ts-ribbon-b">' + t.m + ':' + t.s + '</div></div>';
+      }
+      if (sel === 'mixed') {
+        return '<div class="ts-clock ts-mixed"><div class="ts-mix-bubble">' + t.h + '</div><div class="ts-mix-num">' + t.m + '</div><div class="ts-mix-sec">' + t.s + '</div></div>';
+      }
+      if (sel === 'poster') {
+        return '<div class="ts-clock ts-poster"><div class="ts-poster-h">' + t.h + '</div><div class="ts-poster-m">' + t.m + '</div><div class="ts-poster-s">' + t.s + '</div><div class="ts-poster-cap">FOCUS · TIME</div></div>';
+      }
+      if (sel === 'focus') {
+        return '<div class="ts-clock ts-focus"><div class="ts-focus-tag">FOCUS</div><div class="ts-focus-n">' + t.h + ':' + t.m + '</div><div class="ts-focus-s">:' + t.s + '</div></div>';
+      }
+      // bubble（封面默认）：左侧圆角块 05，中间花边 blob 57，右侧圆 45
+      return '<div class="ts-clock ts-bubble">' +
+        '<div class="ts-blk ts-blk-l">' + t.h + '</div>' +
+        '<div class="ts-blob">' + t.m + '</div>' +
+        '<div class="ts-blk ts-blk-r">' + t.s + '</div>' +
+        '</div>';
+    }
+
+    function build() {
+      var tpls = AK_TSCREEN_TPLS.map(function (x) {
+        var on = x.id === sel ? ' on' : '';
+        return '<button class="ts-tpl' + on + '" data-ts-tpl="' + x.id + '">' +
+          '<span class="ts-tpl-demo">' + demo(x.demo) + '</span>' +
+          '<b>' + x.name + '</b><small>' + x.sub + '</small></button>';
+      }).join('');
+      var looks = [['theme','主题'],['dark','暗色'],['soft','柔和']].map(function (x) {
+        return '<button class="ts-look' + (look === x[0] ? ' on' : '') + '" data-ts-look="' + x[0] + '">' + x[1] + '</button>';
+      }).join('');
+      host.innerHTML =
+        '<div class="ts-app" data-look="' + look + '">' +
+          '<div class="ts-stage" id="ts-stage">' + clockHtml(now()) + '</div>' +
+          '<div class="ts-panel">' +
+            '<div class="ts-panel-head"><span class="ts-back">←</span><b>时间屏幕</b>' +
+              '<span class="ts-timer">10 分钟后启用</span><span class="ts-x">×</span></div>' +
+            '<div class="ts-panel-body">' +
+              '<div class="ts-sec"><div class="ts-sec-title"><span class="ts-ic-clock">◷</span> 模板</div>' +
+                '<div class="ts-tpl-grid">' + tpls + '</div></div>' +
+              '<div class="ts-sec ts-sec-appear"><div class="ts-sec-title"><span class="ts-ic-palette">✿</span> 外观</div>' +
+                '<div class="ts-looks"><span class="ts-look-label">◉ 主题</span>' + looks + '</div></div>' +
+            '</div>' +
+          '</div>' +
+        '</div>' + akCard('说明',
+          '<p class="pp">一比一复刻暮光工具箱 4.0.6「时间屏幕」的 Material Design 3 桌面钟：薰衣草背景、波浪花边时钟、粉色模板面板，10 款模板与 3 种外观均可实时切换，时钟每秒走动。</p>');
+
+      if (timer) clearInterval(timer);
+      timer = setInterval(function () {
+        var stage = host.querySelector('#ts-stage');
+        if (stage) stage.innerHTML = clockHtml(now());
+      }, 1000);
+    }
+
+    host.addEventListener('click', function (e) {
+      var b = e.target.closest('[data-ts-tpl]');
+      if (b) { sel = b.getAttribute('data-ts-tpl'); build(); return; }
+      var l = e.target.closest('[data-ts-look]');
+      if (l) { look = l.getAttribute('data-ts-look'); build(); }
+    });
+    build();
+  }
+});
+
 /* ===== core.js ===== */
 /* ============================================================
    安空工具箱 — 应用框架 / 路由 / 工具引擎
@@ -29732,7 +30129,7 @@ var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, f
 function ic(name, cls) { return akIcon(name, cls); }
 
 var APP_NAME = '安空工具箱';
-var VERSION = '2.7';
+var VERSION = '2.8';
 window.AK_VERSION = VERSION;
 var FEEDBACK_EMAIL = window.AK_FEEDBACK_EMAIL || '3805278668@qq.com';
 
@@ -30132,7 +30529,7 @@ function pageMe() {
     '<div class="chips" style="padding:0 2px 10px">' + ['auto', 'light', 'dark'].map(function (m) {
       return '<button class="chip ' + (state.theme === m ? 'on' : '') + '" data-act="theme" data-mode="' + m + '">' + themeLabels[m] + '</button>';
     }).join('') + '</div>';
-  var accentNames = { purple: '优雅紫', amber: '浅黄', mint: '薄荷', sakura: '樱粉', sky: '天蓝', lilac: '丁香' };
+  var accentNames = { purple: '优雅紫', grass: '青草绿', amber: '浅黄', mint: '薄荷', sakura: '樱粉', sky: '天蓝', lilac: '丁香' };
   var accentRow = '<div class="setting-row"><span class="si">' + ic('palette') + '</span>' +
     '<span class="st"><b>主题色</b><small>当前：' + (accentNames[state.accent] || '优雅紫') + ' · 更多在「设置」中</small></span>' +
     '<button class="sr-link" data-act="page" data-id="settings">配置' + ic('arrow') + '</button></div>';

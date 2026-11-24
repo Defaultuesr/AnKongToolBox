@@ -213,9 +213,9 @@ var P = {
 
   /* ---------- 7. 主题与配色 ---------- */
   themes: {
-    title: '主题与配色', sub: 'Material 3 Expressive · M3E Canvas 设计 · 六套主题色', icon: 'palette',
+    title: '主题与配色', sub: 'Material 3 Expressive · M3E Canvas 设计 · 七套主题色', icon: 'palette',
     render: function () {
-      var C = [['purple', '优雅紫', '#6750A4'], ['amber', '浅黄', '#FAE185'], ['mint', '薄荷', '#A8DCC0'],
+      var C = [['purple', '优雅紫', '#6750A4'], ['grass', '青草绿', '#2E6A44'], ['amber', '浅黄', '#FAE185'], ['mint', '薄荷', '#A8DCC0'],
         ['sakura', '樱粉', '#F3BFCB'], ['sky', '天蓝', '#A9CFEA'], ['lilac', '丁香', '#C9BCE8']];
       var sw = C.map(function (c) {
         return '<div style="text-align:center;min-width:74px"><div style="width:46px;height:46px;border-radius:50%;background:' + c[2] +

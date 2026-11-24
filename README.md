@@ -1,11 +1,11 @@
 # 安空工具箱（AnKongToolBox）
 
-> 一个功能齐全、完全离线的多平台实用工具箱 —— 集 **495 个工具**、**15 种界面语言**、**资讯阅读** 与 **自动更新** 于一体，采用**Material 3 Expressive UI**（由 M3E Canvas 设计导出），支持 Android / iOS / Windows / macOS / 网页五端。
+> 一个功能齐全、完全离线的多平台实用工具箱 —— 集 **496 个工具**、**15 种界面语言**、**资讯阅读** 与 **自动更新** 于一体，采用**Material 3 Expressive UI**（由 M3E Canvas 设计导出），支持 Android / iOS / Windows / macOS / 网页五端。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-2.7-orange.svg)](https://github.com/Defaultuesr/AnKongToolBox/releases/latest)
+[![Version](https://img.shields.io/badge/version-2.8-orange.svg)](https://github.com/Defaultuesr/AnKongToolBox/releases/latest)
 [![Platform](https://img.shields.io/badge/platform-Android%20%7C%20iOS%20%7C%20Web-blue.svg)](#平台支持)
-[![Tools](https://img.shields.io/badge/tools-495-green.svg)](#功能概览)
+[![Tools](https://img.shields.io/badge/tools-496-green.svg)](#功能概览)
 
 ---
 
@@ -29,7 +29,7 @@
 
 **安空工具箱** 是一款以「轻黄护眼、离线可用、功能全面」为设计理念的工具集合应用。它的核心是一个**单文件 H5 网页（SPA）**，通过原生 WebView 壳打包为 Android APK 与 iOS App，也可以直接在浏览器中打开使用。
 
-- **495 个实用工具**，覆盖查询、文本、媒体、开发、计算、生活、测评、游戏、聚合九大分类
+- **496 个实用工具**，覆盖查询、文本、媒体、开发、计算、生活、测评、游戏、聚合九大分类
 - **绝大多数工具纯离线运行**，输入内容不离开设备，注重隐私
 - **浅黄色护眼主题**，支持 Pad / 平板 / ChromeOS 大屏自适应布局
 - **15 种界面语言**，一键切换，覆盖全球主要语种
@@ -178,6 +178,7 @@ python3 build-web.py
 | --- | --- | --- |
 | v2.6 | 2026-11-24 | 真正的 Material 3 UI（Google 官方色彩算法 + 完整 Design Token 与组件规范）；新增 6 个离线工具，工具总数达 489 |
 | v2.7 | 2026-11-24 | UI 改用 M3E Canvas 设计导出：全部配色/字体/图标/圆角/动效素材取自该网站的 Material 3 Expressive 规范；新增 6 个离线工具，工具总数达 495 |
+| v2.8 | 2026-11-24 | 新增「时间屏幕」工具，一比一复刻暮光工具箱 4.0.6 的 MD3 桌面钟（薰衣草背景、花边时钟、粉色模板面板、10 模板 + 3 外观）；新增青草绿主题与 8 周年致敬文案，工具总数达 496 |
 | v2.5 | 2026-11-22 | 首发 Windows exe 与 macOS dmg 桌面平台；新增 6 个离线工具，工具总数达 483 |
 | v2.4 | 2026-11-22 | 首次支持 iOS；新增 6 个离线工具，工具总数达 477 |
 | v2.3 | 2026-11-22 | 新增「今天吃什么 / 域名后缀 / 英制单位 / 开源库速查」等 |

@@ -46,7 +46,7 @@ function cmp(a, b) {
   }
   return 0;
 }
-function localVersion() { return String(window.AK_VERSION || '2.7'); }
+function localVersion() { return String(window.AK_VERSION || '2.8'); }
 
 /* ---------------- 状态 ---------------- */
 var IDLE = { state: 'idle', version: '', checkedAt: 0, error: '' };

@@ -1740,3 +1740,245 @@ input:focus, textarea:focus, select:focus {
     transition-duration: .01ms !important;
   }
 }
+
+/* v2.8 · 青草绿主题（复刻暮光浅绿 MD3） */
+[data-accent="grass"][data-theme="light"] {
+  --md-sys-color-primary: #2e6a44;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #b1f1c1;
+  --md-sys-color-on-primary-container: #00210e;
+  --md-sys-color-secondary: #4f6353;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #d2e8d4;
+  --md-sys-color-on-secondary-container: #0d1f13;
+  --md-sys-color-tertiary: #3a646f;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #beeaf6;
+  --md-sys-color-on-tertiary-container: #001f26;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-background: #f6fbf3;
+  --md-sys-color-on-background: #181d18;
+  --md-sys-color-surface: #f6fbf3;
+  --md-sys-color-surface-dim: #d7dbd4;
+  --md-sys-color-surface-bright: #f6fbf3;
+  --md-sys-color-on-surface: #181d18;
+  --md-sys-color-on-surface-variant: #414942;
+  --md-sys-color-surface-variant: #dde5db;
+  --md-sys-color-outline: #717971;
+  --md-sys-color-outline-variant: #c1c9bf;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #2c322d;
+  --md-sys-color-inverse-on-surface: #edf2eb;
+  --md-sys-color-inverse-primary: #96d5a6;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #f0f5ed;
+  --md-sys-color-surface-container: #ebefe8;
+  --md-sys-color-surface-container-high: #e5eae2;
+  --md-sys-color-surface-container-highest: #dfe4dc;
+  --md-sys-color-surface-tint: #2e6a44;
+}
+
+[data-accent="grass"][data-theme="dark"] {
+  --md-sys-color-primary: #96d5a6;
+  --md-sys-color-on-primary: #00391c;
+  --md-sys-color-primary-container: #12512e;
+  --md-sys-color-on-primary-container: #b1f1c1;
+  --md-sys-color-secondary: #b6ccb8;
+  --md-sys-color-on-secondary: #223527;
+  --md-sys-color-secondary-container: #384b3c;
+  --md-sys-color-on-secondary-container: #d2e8d4;
+  --md-sys-color-tertiary: #a2ceda;
+  --md-sys-color-on-tertiary: #023640;
+  --md-sys-color-tertiary-container: #214c57;
+  --md-sys-color-on-tertiary-container: #beeaf6;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffdad6;
+  --md-sys-color-background: #101510;
+  --md-sys-color-on-background: #dfe4dc;
+  --md-sys-color-surface: #101510;
+  --md-sys-color-surface-dim: #101510;
+  --md-sys-color-surface-bright: #353a35;
+  --md-sys-color-on-surface: #dfe4dc;
+  --md-sys-color-on-surface-variant: #c1c9bf;
+  --md-sys-color-surface-variant: #414942;
+  --md-sys-color-outline: #8b938a;
+  --md-sys-color-outline-variant: #414942;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #dfe4dc;
+  --md-sys-color-inverse-on-surface: #2c322d;
+  --md-sys-color-inverse-primary: #2e6a44;
+  --md-sys-color-surface-container-lowest: #0a0f0b;
+  --md-sys-color-surface-container-low: #181d18;
+  --md-sys-color-surface-container: #1c211c;
+  --md-sys-color-surface-container-high: #262b27;
+  --md-sys-color-surface-container-highest: #313631;
+  --md-sys-color-surface-tint: #96d5a6;
+}
+
+
+/* ============================================================
+   v2.8 · 时间屏幕（一比一复刻暮光 4.0.6 MD3 桌面钟）
+   ============================================================ */
+.ts-app {
+  --ts-accent: #5B4BB7;
+  --ts-lav: #DCD6F7;
+  --ts-lav2: #EDE9FB;
+  --ts-panel: #FBE4EC;
+  --ts-panel2: #FDF0F5;
+  --ts-ink: #4A3F86;
+  --ts-blob: #4B3F97;
+  border-radius: 24px;
+  overflow: hidden;
+  border: 1px solid var(--md-sys-color-outline-variant);
+  margin-bottom: 14px;
+}
+.ts-app[data-look="dark"] {
+  --ts-lav: #2A2447; --ts-lav2: #372F5E; --ts-panel: #3A2E42; --ts-panel2: #463847;
+  --ts-ink: #EDE4FF; --ts-blob: #B9A7F7; --ts-accent: #C3B3FF;
+}
+.ts-app[data-look="soft"] {
+  --ts-lav: #F0EAFB; --ts-lav2: #FAF6FF; --ts-panel: #FCE9F0; --ts-panel2: #FFF4F8;
+  --ts-ink: #6B5BA8; --ts-blob: #7C6CC4; --ts-accent: #8B7BD0;
+}
+
+/* 时钟舞台：薰衣草渐变 + 居中 */
+.ts-stage {
+  position: relative;
+  min-height: 300px;
+  display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(160deg, var(--ts-lav2) 0%, var(--ts-lav) 60%, var(--ts-lav) 100%);
+  padding: 26px 16px 8px;
+  overflow: hidden;
+}
+.ts-clock { display: flex; align-items: center; justify-content: center; gap: 14px; width: 100%; }
+
+/* bubble 模板（封面默认） */
+.ts-blk {
+  font-size: 40px; font-weight: 800; color: var(--ts-ink);
+  background: color-mix(in srgb, var(--ts-accent) 14%, transparent);
+  border-radius: 22px; padding: 16px 18px; line-height: 1;
+}
+.ts-blk-r { border-radius: 50%; padding: 18px 20px; font-size: 30px; }
+.ts-blob {
+  position: relative; font-size: 48px; font-weight: 800; color: #fff;
+  width: 140px; height: 140px; display: flex; align-items: center; justify-content: center;
+  background: var(--ts-blob);
+  /* 波浪花边：SVG blob 路径复刻暮光的花瓣形时钟底 */
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23000' d='M50 4C60 4 64 12 74 15C84 18 94 22 94 33C94 43 87 49 87 58C87 68 92 75 84 82C76 89 66 86 56 90C47 94 42 98 33 94C24 90 25 81 18 75C11 69 5 64 6 54C7 45 14 41 15 32C16 23 13 14 22 10C30 6 40 4 50 4Z'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%23000' d='M50 4C60 4 64 12 74 15C84 18 94 22 94 33C94 43 87 49 87 58C87 68 92 75 84 82C76 89 66 86 56 90C47 94 42 98 33 94C24 90 25 81 18 75C11 69 5 64 6 54C7 45 14 41 15 32C16 23 13 14 22 10C30 6 40 4 50 4Z'/%3E%3C/svg%3E") center/contain no-repeat;
+  animation: ts-blob-morph 12s ease-in-out infinite;
+}
+@keyframes ts-blob-morph {
+  0%,100% { transform: rotate(0deg) scale(1); }
+  50%     { transform: rotate(8deg) scale(1.04); }
+}
+
+/* minimal */
+.ts-minimal { gap: 10px; }
+.ts-minimal span { font-size: 56px; font-weight: 800; color: var(--ts-ink); }
+.ts-minimal em { font-size: 34px; font-style: normal; color: var(--ts-accent); }
+.ts-minimal small { font-size: 20px; color: var(--ts-ink); opacity: .6; }
+
+/* dial */
+.ts-dialface { width: 172px; height: 172px; border-radius: 50%; border: 8px solid var(--ts-accent); position: relative;
+  display: flex; align-items: center; justify-content: center; background: color-mix(in srgb, var(--ts-accent) 8%, transparent); }
+.ts-dialface i { position: absolute; width: 4px; height: 58px; background: var(--ts-accent); top: 16px; left: 50%; transform: translateX(-50%); transform-origin: bottom; border-radius: 3px; }
+.ts-dialface b { font-size: 26px; color: var(--ts-ink); }
+
+/* dual */
+.ts-dual div { font-size: 52px; font-weight: 800; color: var(--ts-ink); background: color-mix(in srgb, var(--ts-accent) 14%, transparent);
+  border-radius: 24px; padding: 14px 18px; }
+.ts-dual div + div { color: #fff; background: var(--ts-blob); }
+.ts-dual small { font-size: 22px; color: var(--ts-accent); align-self: flex-end; margin-bottom: 14px; }
+
+/* stack */
+.ts-stack { flex-direction: column; gap: 4px; }
+.ts-stack b { font-size: 44px; line-height: 1; color: var(--ts-ink); }
+.ts-stack b:nth-child(2) { color: var(--ts-blob); }
+.ts-stack b:nth-child(3) { font-size: 26px; color: var(--ts-accent); }
+
+/* orbit */
+.ts-orbit { position: relative; height: 200px; }
+.ts-orbit-ring { width: 180px; height: 180px; border-radius: 50%; border: 6px dashed var(--ts-accent);
+  display: flex; align-items: center; justify-content: center; }
+.ts-orbit-ring span { font-size: 40px; font-weight: 800; color: var(--ts-ink); }
+.ts-orbit-sec { position: absolute; top: -4px; right: 6%; width: 40px; height: 40px; border-radius: 50%;
+  background: var(--ts-blob); color: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 700; }
+
+/* ribbon */
+.ts-ribbon { flex-direction: column; gap: 8px; }
+.ts-ribbon-a { font-size: 62px; font-weight: 800; color: #fff; background: var(--ts-blob); border-radius: 22px; padding: 4px 30px; }
+.ts-ribbon-b { font-size: 28px; font-weight: 700; color: var(--ts-ink); letter-spacing: 4px; }
+
+/* mixed */
+.ts-mixed { position: relative; height: 200px; }
+.ts-mix-bubble { width: 120px; height: 120px; border-radius: 50%; background: var(--ts-blob); color: #fff;
+  display: flex; align-items: center; justify-content: center; font-size: 44px; font-weight: 800; }
+.ts-mix-num { position: absolute; right: 8%; top: 10px; font-size: 40px; font-weight: 800; color: var(--ts-ink); }
+.ts-mix-sec { position: absolute; right: 12%; bottom: 14px; font-size: 20px; color: var(--ts-accent); }
+
+/* poster */
+.ts-poster { flex-direction: column; align-items: flex-start; }
+.ts-poster-h { font-size: 72px; font-weight: 800; line-height: .9; color: var(--ts-ink); }
+.ts-poster-m { font-size: 34px; color: var(--ts-blob); font-weight: 700; }
+.ts-poster-s { font-size: 18px; color: var(--ts-accent); }
+.ts-poster-cap { margin-top: 8px; font-size: 10px; letter-spacing: 4px; color: var(--ts-ink); opacity: .5; }
+
+/* focus */
+.ts-focus { flex-direction: column; }
+.ts-focus-tag { font-size: 10px; letter-spacing: 5px; color: var(--ts-accent); font-weight: 700; }
+.ts-focus-n { font-size: 66px; font-weight: 800; color: var(--ts-ink); line-height: 1.1; }
+.ts-focus-s { font-size: 26px; color: var(--ts-blob); font-weight: 700; }
+
+/* 粉色控制面板 */
+.ts-panel {
+  background: var(--ts-panel);
+  border-radius: 20px 20px 0 0;
+  padding: 12px 14px 16px;
+  margin-top: -6px;
+  position: relative;
+}
+.ts-panel-head { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; color: var(--ts-ink); }
+.ts-panel-head b { font-size: 14px; font-weight: 700; }
+.ts-back { font-size: 16px; }
+.ts-timer { margin-left: auto; font-size: 10px; background: color-mix(in srgb, var(--ts-ink) 10%, transparent);
+  padding: 3px 8px; border-radius: 10px; }
+.ts-x { font-size: 16px; opacity: .7; }
+.ts-panel-body { display: grid; grid-template-columns: 1.6fr 1fr; gap: 10px; }
+.ts-sec { background: var(--ts-panel2); border-radius: 14px; padding: 10px; }
+.ts-sec-title { font-size: 11px; font-weight: 700; color: var(--ts-ink); margin-bottom: 9px; display: flex; align-items: center; gap: 4px; }
+.ts-ic-clock, .ts-ic-palette { font-size: 13px; }
+.ts-tpl-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px; }
+.ts-tpl { background: color-mix(in srgb, var(--ts-accent) 8%, #fff); border: 1px solid transparent;
+  border-radius: 10px; padding: 7px 4px 6px; text-align: center; color: var(--ts-ink);
+  display: flex; flex-direction: column; align-items: center; gap: 3px; transition: transform .15s cubic-bezier(.32,.72,0,1), border-color .15s; }
+.ts-tpl:active { transform: scale(.92); }
+.ts-tpl.on { border-color: var(--ts-accent); box-shadow: 0 0 0 1px var(--ts-accent) inset; background: color-mix(in srgb, var(--ts-accent) 16%, #fff); }
+.ts-tpl-demo { height: 18px; display: flex; align-items: center; justify-content: center; position: relative; }
+.ts-tpl b { font-size: 10px; font-weight: 700; }
+.ts-tpl small { font-size: 7px; opacity: .6; line-height: 1; }
+.ts-sec-appear { display: flex; flex-direction: column; }
+.ts-looks { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; margin-top: 2px; }
+.ts-look-label { font-size: 10px; color: var(--ts-ink); opacity: .7; display: inline-flex; align-items: center; gap: 3px; width: 100%; margin-bottom: 4px; }
+.ts-look { font-size: 10px; color: var(--ts-ink); border: 1px solid color-mix(in srgb, var(--ts-ink) 25%, transparent);
+  border-radius: 12px; padding: 3px 9px; background: transparent; }
+.ts-look.on { background: var(--ts-accent); color: #fff; border-color: var(--ts-accent); }
+
+@media (max-width: 560px) {
+  .ts-blob { width: 108px; height: 108px; font-size: 38px; }
+  .ts-blk { font-size: 30px; padding: 12px 13px; }
+  .ts-blk-r { font-size: 22px; padding: 14px; }
+  .ts-panel-body { grid-template-columns: 1fr; }
+  .ts-tpl-grid { grid-template-columns: repeat(5, 1fr); }
+  .ts-stage { min-height: 240px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ts-blob { animation: none; }
+}

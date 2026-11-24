@@ -50,6 +50,7 @@ JS_FILES = [
     'i18n-v25.js',
     'i18n-v26.js',
     'i18n-v27.js',
+    'i18n-v28.js',
     'i18n.js',
     'hubs.js',
     'pages.js',
@@ -88,6 +89,7 @@ JS_FILES = [
     'tools-v25.js',
     'tools-v26.js',
     'tools-v27.js',
+    'tools-v28.js',
     'core.js',
 ]
 

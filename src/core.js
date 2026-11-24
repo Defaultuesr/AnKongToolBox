@@ -13,7 +13,7 @@ var esc = function (s) { return String(s == null ? '' : s).replace(/[&<>"']/g, f
 function ic(name, cls) { return akIcon(name, cls); }
 
 var APP_NAME = '安空工具箱';
-var VERSION = '2.7';
+var VERSION = '2.8';
 window.AK_VERSION = VERSION;
 var FEEDBACK_EMAIL = window.AK_FEEDBACK_EMAIL || '3805278668@qq.com';
 
@@ -413,7 +413,7 @@ function pageMe() {
     '<div class="chips" style="padding:0 2px 10px">' + ['auto', 'light', 'dark'].map(function (m) {
       return '<button class="chip ' + (state.theme === m ? 'on' : '') + '" data-act="theme" data-mode="' + m + '">' + themeLabels[m] + '</button>';
     }).join('') + '</div>';
-  var accentNames = { purple: '优雅紫', amber: '浅黄', mint: '薄荷', sakura: '樱粉', sky: '天蓝', lilac: '丁香' };
+  var accentNames = { purple: '优雅紫', grass: '青草绿', amber: '浅黄', mint: '薄荷', sakura: '樱粉', sky: '天蓝', lilac: '丁香' };
   var accentRow = '<div class="setting-row"><span class="si">' + ic('palette') + '</span>' +
     '<span class="st"><b>主题色</b><small>当前：' + (accentNames[state.accent] || '优雅紫') + ' · 更多在「设置」中</small></span>' +
     '<button class="sr-link" data-act="page" data-id="settings">配置' + ic('arrow') + '</button></div>';

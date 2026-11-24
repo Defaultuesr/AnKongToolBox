@@ -17,6 +17,11 @@ function btn(do_, label, cls) {
 }
 
 var CHANGELOG = [
+  ['v2.8', '2026-11-24', [
+    '新增「时间屏幕」工具，一比一复刻暮光工具箱 4.0.6 的 Material Design 3 桌面钟：薰衣草背景、波浪花边时钟、粉色模板面板',
+    '内置 10 款时钟模板（焦点 / 海报 / 极简 / 表盘 / 双块 / 堆叠 / 轨道 / 气泡 / 混合 / 丝带）与 3 种外观（主题 / 暗色 / 柔和），实时预览切换',
+    '复刻视频中的 8 周年「为爱发电 · 持续更新」主题氛围与浅绿 MD3 视觉元素'
+  ]],
   ['v2.7', '2026-11-24', [
     'UI 全面改用 M3E Canvas（lnkiai.github.io/m3e-canvas）设计并导出：所有配色角色、字体、图标、圆角与动效素材均取自该网站生成的 Material 3 Expressive 规范',
     '新增网站同款 Roboto 字体与 Material Symbols Rounded 图标字体（内联离线可用）；默认主题切换为优雅紫（网站 Purple baseline 精确色彩角色）',
@@ -314,7 +319,7 @@ var AK_PAGES = {
   },
 
   update: {
-    title: '检查更新', sub: '当前版本 v' + (window.AK_VERSION || '2.7'), icon: 'refresh',
+    title: '检查更新', sub: '当前版本 v' + (window.AK_VERSION || '2.8'), icon: 'refresh',
     render: function () {
       var U = window.AK_UPDATE;
       var s = U ? U.get() : { state: 'idle' };
@@ -326,7 +331,7 @@ var AK_PAGES = {
         notes = h2('新版本更新说明') + card('<pre class="upd-notes">' + E(s.body) + '</pre>');
       }
       var rows = [
-        ['当前版本', 'v' + (window.AK_VERSION || '2.7')],
+        ['当前版本', 'v' + (window.AK_VERSION || '2.8')],
         ['构建日期', '2026-11-15'],
         ['最低系统', 'Android 6.0 (API 23)'],
         ['适配平台', '手机 / 平板 / ChromeOS'],
@@ -427,7 +432,7 @@ var AK_PAGES = {
       var A = window.AnkongApp, st = A ? A.state : { theme: 'auto', accent: 'amber' };
       var themes = [['auto', '跟随系统'], ['light', '浅色'], ['dark', '深色']];
       var accents = [
-        ['purple', '优雅紫', '#6750A4'], ['amber', '浅黄', '#FAE185'], ['mint', '薄荷', '#BFE6D2'], ['sakura', '樱粉', '#F5D6DE'],
+        ['purple', '优雅紫', '#6750A4'], ['grass', '青草绿', '#2E6A44'], ['amber', '浅黄', '#FAE185'], ['mint', '薄荷', '#BFE6D2'], ['sakura', '樱粉', '#F5D6DE'],
         ['sky', '天蓝', '#CBE1F3'], ['lilac', '丁香', '#E1D6F2']
       ];
       var L = window.AKI18N;
@@ -467,15 +472,17 @@ var AK_PAGES = {
     title: '关于', sub: '应用信息与致谢', icon: 'info',
     render: function () {
       return '<div class="about-hero"><span class="ah-ic">' + akIcon('grid') + '</span>' +
-        '<b>安空工具箱</b><small>v' + (window.AK_VERSION || '2.7') + ' · 一个 App，装下所有顺手的小工具</small></div>' +
+        '<b>安空工具箱</b><small>v' + (window.AK_VERSION || '2.8') + ' · 一个 App，装下所有顺手的小工具</small></div>' +
         h2('应用信息') + card(
           kv([
-            ['应用名称', '安空工具箱'], ['版本', 'v' + (window.AK_VERSION || '2.7')],
+            ['应用名称', '安空工具箱'], ['版本', 'v' + (window.AK_VERSION || '2.8')],
             ['包名', 'com.ankong.toolbox'], ['最低系统', 'Android 6.0 / API 23'],
-            ['目标系统', 'Android 14 / API 34'], ['界面风格', 'Material Design 3 · 浅黄色'],
+            ['目标系统', 'Android 14 / API 34'], ['界面风格', 'Material Design 3 Expressive'],
             ['适配平台', '手机 / 平板 / ChromeOS'], ['工具数量', String(window.AnkongApp ? window.AnkongApp.tools().length : 129) + ' 个'],
             ['联网需求', '核心工具完全离线'], ['广告 / 账号 / 埋点', '无']
           ])
+        ) + h2('致敬') + card(
+          para('「时间屏幕」桌面钟一比一复刻自暮光工具箱 4.0.6 的 Material Design 3 设计（见 B 站官方宣传视频）。向坚持「为爱发电 · 持续更新」八年的开发者致敬——纯净无广、用户意见至上，愿你归来仍是少年。')
         ) + h2('实现说明') + card(
           para('界面与全部工具均为独立实现：原生 HTML / CSS / JavaScript 单页应用 + 轻量 Android WebView 壳。未反编译、未复制任何第三方应用的代码、图标或品牌资源。') +
           para('二维码生成使用 MIT 许可的 qrcode-generator（内嵌本地），其余功能不依赖第三方库。')
